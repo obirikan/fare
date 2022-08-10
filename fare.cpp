@@ -59,7 +59,7 @@ void login()
         cin>>pass;
         cout<<"***********************************************************************\n";
         
-        ifstream input("database.txt");
+        ifstream input("ConfirmUser.txt");
         while(input>>u>>p)
         {
                 if(u==user && p==pass)
@@ -106,7 +106,7 @@ void registr()
         cout<<"\nEnter the password :";
         cin>>regpass;
         
-        ofstream reg("database.txt",ios::app);
+        ofstream reg("ConfirmUser.txt",ios::app);
         reg<<reguser<<' '<<regpass<<endl;
         system("cls");
         cout<<"\nRegistration Sucessful\n";
