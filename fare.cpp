@@ -6,6 +6,7 @@
 #include<string.h>
 #include <cstdlib>
 using namespace std;
+
 void login();
 void registr();
 void forgot();
@@ -16,7 +17,7 @@ void main2();
 
 
 main()
-{        int a;
+{       int a;
         int choice;
         system("cls");
         cout<<"***********************************************************************\n\n";
@@ -77,13 +78,13 @@ void login()
                 main();
         }
 
-        if(count==1 && attempts <4 )
+        if(count==1 && attempts < 4 )
         {
           main2();
         }
 
         if(p!=pass){
-               cout << "\n";
+        cout << "\n";
         cout <<"Password Attempt No. : " <<attempts+1;
         cout << "\n";
         cout << "Enter Password Again : ";
@@ -118,7 +119,7 @@ void fare(){
         string cloc,des;
         system("cls");
         cout<<"                      Myfare GH                              \n\n";
-        cout<<"***********************************************************************";
+        cout<<"***********************************************************************\n";
         cout<<"current location"<<endl;
         cin>>cloc;
         cout<<"Destination"<<endl;
@@ -190,12 +191,12 @@ void News(){
         system("cls");
         cout<<"**************News****************\n\n\n\n\n";
         string a[1]={"Transport Fares Increased By 15 Percent in February 2022"};
+        cout<<"press enter to continue";
         for(int i=0;i<1;i++){
            cout<<a[i]<<endl;
         }
                 cin.get();
                 cin.get();
-                cout<<"press enter to continue";
                 main2();
 }
 
